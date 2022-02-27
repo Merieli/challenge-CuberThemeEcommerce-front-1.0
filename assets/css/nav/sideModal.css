@@ -1,0 +1,129 @@
+.sidemodal{
+    background-color: var(--colorBackText);    
+    box-sizing: border-box;
+    color: var(--colorButText);
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    padding: 0 50px 50px 50px;
+    right: -76%;
+    transition: right 1s ease;
+    top: 0;
+    width: 480px;
+    z-index: 9;
+}
+
+.sidemodal__box{
+    width: 100%;
+}
+
+.sidemodal.active{
+    opacity: 1;
+    visibility: visible;
+    right: 0;
+    transition: right 1s ease;
+}
+
+.sideOverlay--active{
+    background-color: rgba(0, 0, 0, 0.795);
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    position: fixed;
+    transition: opacity .2s linear;
+    top: 0;
+    visibility: visible;
+    width: 100%;
+    z-index: 8;
+}
+
+.bodySideBarMove{
+    overflow: hidden;
+    position: relative;
+    right: 460px;
+    transition: right 150ms linear;
+}
+
+.sidemodal__close{
+    background: local;
+    border: none;
+    height: 35px;
+    position: absolute;
+    right: -150px;
+    top: calc(96px / 2 - 18px);
+    width: 35px;
+    z-index: 10;
+    transition: all 0.2s linear;
+}
+
+.sidemodal__close.sidemodal__closeMove{
+    right: 50px;
+}
+
+.sidemodal__close .sidemodal__hamburger::after{
+    background: var(--colorDetBut);
+    content: "";
+    display: block;
+    height: 3px;
+    right: 0;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 0;
+    width: 27px;
+    transition: all 150ms linear;
+
+}
+
+.sidemodal__close .sidemodal__hamburger::before{
+    background: var(--colorDetBut);
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 27px;
+    transition: all 150ms linear;
+}
+
+.sidemodal__close:hover .sidemodal__hamburger::before{
+    width: 30px;
+    right: -1.5px;
+}
+
+.sidemodal__close:hover .sidemodal__hamburger::after{
+    width: 30px;
+    right: -1.5px;
+}
+
+.sidemodal__hamburger{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 27px;
+    height: 17px;
+    cursor: pointer;
+    display: block;
+}
+
+@media screen and (max-width: 374px) {
+    .sidemodal{
+        padding: 0 15px 50px 15px;
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 374px) and (max-width: 640px) {
+    .sidemodal{
+        padding: 0 30px 50px 30px;
+        width: 374px;
+    }
+}

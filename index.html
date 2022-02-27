@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema Cuber - Desafio3</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/nav/nav.css">
+    <link rel="stylesheet" href="assets/css/nav/sideModal.css">
+    <link rel="stylesheet" href="assets/css/nav/sidebar.css">
+    <link rel="stylesheet" href="assets/css/nav/sideCart.css">
+    <link rel="stylesheet" href="assets/css/nav/sideSearch.css">
+    <link rel="stylesheet" href="assets/css/featured.css">
+    <link rel="stylesheet" href="assets/css/newArrivals.css">
+    <link rel="stylesheet" href="assets/css/category.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="stylesheet" href="assets/css/bannerVideo.css">
+    <link rel="stylesheet" href="assets/css/productsLC.css">
+    <link rel="stylesheet" href="assets/css/look.css">
+    <link rel="stylesheet" href="assets/css/news.css">
+    <link rel="stylesheet" href="assets/css/testimonials.css">
+    <link rel="stylesheet" href="assets/css/newsletter.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+
+    <header>
+
+        <nav class="nav__top" data-nav>
+            <div class="nav__logo">
+                <h1 class="nav__logoTitle">
+                    <a href="" class="nav__logoLink">
+                        <img src="assets/img/favicon.png" 
+                        alt="" class="nav__logoImg">
+                    </a>
+                </h1>
+            </div>
+
+            <div class="nav__icons">
+                <span class="nav__iconSearch" data-sidesearch="open">
+                    <a href="#" class="nav__iconLinkSearch">
+                        <span class="nav__iconBox">
+                            <svg version="1.1" class="nav__iconSvgSearch" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            xmlns:xlink="http://www.w3.org/1999/xlink" 
+                            x="0px" y="0px" viewBox="0 0 24 27" 
+                            style="enable-background:new 0 0 24 27; width: 24px; height: 27px;" 
+                            xml:space="preserve">
+                                <path 
+                                d="M10,2C4.5,2,0,6.5,0,12s4.5,10,10,10s10-4.5,10-10S15.5,2,10,2z M10,19c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7S13.9,19,10,19z">
+                                </path>
+                                <rect x="17" y="17" 
+                                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -9.2844 19.5856)" 
+                                width="4" height="8">
+                                </rect>
+                            </svg>
+                        </span>
+                    </a>
+                </span>
+
+                <span class="nav__iconCart" data-sidecart="open">
+                    <a href="#">
+                        <span class="nav__iconBox">
+                            <svg version="1.1" class="nav__iconSvgCart" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            xmlns:xlink="http://www.w3.org/1999/xlink" 
+                            x="0px" y="0px" viewBox="0 0 24 27" 
+                            style="enable-background:new 0 0 24 27; width: 24px; height: 27px;" 
+                            xml:space="preserve">
+                                <g>
+                                    <path d="M0,6v21h24V6H0z M22,25H2V8h20V25z"></path>
+                                </g>
+                                <g>
+                                    <path 
+                                    d="M12,2c3,0,3,2.3,3,4h2c0-2.8-1-6-5-6S7,3.2,7,6h2C9,4.3,9,2,12,2z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <span class="nav__cartCountBox">
+                                <span class="nav__cartCount">
+                                    1
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </span>
+
+                <button class="nav__iconMenu" data-sidebar="open">
+                    <span class="nav__iconMenuHamburguer">
+                        <span class="nav__iconMenuLine">
+
+                        </span>
+                    </span>
+                </button>
+            </div>
+        </nav>
+
+        <nav id="sidemodal" class="sidemodal sidebar" data-sidebar="menu">
+            <button class="sidemodal__close" aria-label="Close sidebar" title="Close sidebar" data-sidebar="close">
+                <span class="sidemodal__hamburger" aria-hidden="true">
+                </span>
+            </button>
+            
+            <div id="sidemodalBox" class="sidemodal__box">
+                <p class="sidebar__titleList">Menu</p>
+                
+                <div class="sidebar__listBox">
+                    <ul class="sidebar__lista01">
+                        <li class="sidebar__lista01Item">
+                            <a href="#" class="sidebar__lista01Link">Men</a>
+                        </li>
+                        <li class="sidebar__lista01Item">
+                            <a href="#" class="sidebar__lista01Link">Women</a></li>
+                        <li class="sidebar__lista01Item">
+                            <a href="#" class="sidebar__lista01Link">Accessories</a>
+                        </li>
+                        <li class="sidebar__lista01Item">
+                            <a href="#" class="sidebar__lista01Link">SS 2019</a>
+                        </li>
+                    </ul>
+                    <ul class="sidebar__lista02">
+                        <li class="sidebar__lista02Item">
+                            <a href="#" class="sidebar__lista02Link--promotion">Winter Sale</a>
+                        </li>
+                        <li class="sidebar__lista02Item">
+                            <a href="#" class="sidebar__lista02Link--promotion">Lookbook</a>
+                        </li>
+                        <li class="sidebar__lista02Item">
+                            <a href="#" class="sidebar__lista02Link">Our Story</a>
+                        </li>
+                        <li class="sidebar__lista02Item">
+                            <a href="#" class="sidebar__lista02Link">Journal</a>
+                        </li>
+                        <li class="sidebar__lista02Item">
+                            <a href="#" class="sidebar__lista02Link">Features</a>
+                        </li>
+                        <li class="sidebar__lista02Item">
+                            <a href="#" class="sidebar__lista02Link">Get in touch</a></li>
+                        <li class="sidebar__lista02Login">
+                            <a href="#" class="sidebar__lista02Link">Login</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar__lookbook">  
+                    <div class="sidebar__lookbookImg"></div> 
+                    <div class="sidebar__lookbookBox">
+                        <h4 class="sidebar__lookbookTitle">
+                            Lookbook
+                        </h4>
+                        <p class="sidebar__lookbookText">
+                            Things that goes well together!
+                        </p>
+                        <a href="#" class="sidebar__lookbookButton">
+                            TAKE ME THERE!
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar__socialLinks">
+                    <a href="https://twitter.com/krownthemes" target="_blank"
+                    rel="external" class="sidebar__socialLink">
+                        <span class="sidebar__socialIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" class="sidebar__socialSvg">
+                                <path
+                                d="M25.83 5.57c-.94.47-2 .7-3.05.82 1.06-.7 1.88-1.64 2.35-2.94-1.06.6-2.1 1.06-3.4 1.3-.94-1.06-2.35-1.64-3.87-1.64-2.94 0-5.28 2.35-5.28 5.28 0 .47 0 .82.12 1.17-4.47-.23-8.35-2.34-10.93-5.5-.47.82-.7 1.64-.7 2.7 0 1.88.94 3.4 2.35 4.46a4.25 4.25 0 0 1-2.35-.7v.12c0 2.58 1.88 4.7 4.23 5.17-.47 0-.94.12-1.4.12-.35 0-.7 0-.94-.12.6 2.1 2.58 3.64 4.93 3.64-1.88 1.53-4.1 2.35-6.58 2.35-.47 0-.82 0-1.3-.12C2.35 23.18 5.17 24 8.1 24c9.75 0 15.03-8.1 15.03-15.03v-.7a9.91 9.91 0 0 0 2.7-2.7z">
+                                </path>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#" target="_blank" rel="external" class="sidebar__socialLink">
+                        <span class="sidebar__socialIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" class="sidebar__socialSvg">
+                                <path
+                                d="M24.99,0H1.16C0.43,0,0,0.43,0,1.01v23.83C0,25.57,0.43,26,1.16,26h12.71v-9.82h-3.32v-4.04h3.32V8.96c0-3.32,2.17-5.06,5.06-5.06c1.44,0,2.6,0.14,3.03,0.14v3.47h-2.02c-1.59,0-2.02,0.72-2.02,1.88v2.74h4.04l-0.87,4.04h-3.32V26h6.93c0.58,0,1.16-0.43,1.16-1.16V1.01C26,0.43,25.57,0,24.99,0z">
+                                </path>
+                        </svg>
+                        </span>
+                    </a>
+                    <a href="#" target="_blank" rel="external" class="sidebar__socialLink">
+                        <span class="sidebar__socialIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" class="sidebar__socialSvg">
+                                <path
+                                d="M13 2.4l5.2.1c1.3.1 1.9.3 2.4.4.6.2 1 .5 1.5 1s.7.9 1 1.5c.2.5.4 1.1.4 2.4.1 1.4.1 1.8.1 5.2l-.1 5.2c-.1 1.3-.3 1.9-.4 2.4-.2.6-.5 1-1 1.5s-.9.7-1.5 1c-.5.2-1.1.4-2.4.4-1.4.1-1.8.1-5.2.1s-3.9 0-5.2-.1-1.9-.3-2.4-.4c-.6-.2-1-.5-1.5-1s-.7-.9-1-1.5c-.2-.5-.4-1.1-.4-2.4-.1-1.4-.1-1.8-.1-5.2l.1-5.2c.1-1.3.3-1.9.4-2.4.2-.6.5-1 1-1.5s.9-.7 1.5-1c.5-.2 1.1-.4 2.4-.4 1.3-.1 1.7-.1 5.2-.1m0-2.3L7.7.2C6.3.2 5.4.4 4.5.7c-.8.4-1.5.8-2.3 1.5C1.5 3 1.1 3.7.7 4.5.4 5.4.2 6.3.1 7.7V13l.1 5.3c.1 1.4.3 2.3.6 3.1.3.9.8 1.6 1.5 2.3s1.4 1.2 2.3 1.5c.8.3 1.8.5 3.1.6 1.4.1 1.8.1 5.3.1l5.3-.1c1.4-.1 2.3-.3 3.1-.6.9-.3 1.6-.8 2.3-1.5s1.2-1.4 1.5-2.3c.3-.8.5-1.8.6-3.1.1-1.4.1-1.8.1-5.3l-.1-5.3c-.1-1.4-.3-2.3-.6-3.1-.3-.9-.8-1.6-1.5-2.3S22.3 1.1 21.4.8c-.8-.3-1.8-.5-3.1-.6S16.5.1 13 .1zm0 6.3c-3.7 0-6.6 3-6.6 6.6s3 6.6 6.6 6.6 6.6-3 6.6-6.6-2.9-6.6-6.6-6.6zm0 10.9c-2.4 0-4.3-1.9-4.3-4.3s1.9-4.3 4.3-4.3 4.3 1.9 4.3 4.3-1.9 4.3-4.3 4.3z">
+                                </path>
+                                <circle cx="19.9" cy="6.1" r="1.6" class="sidebar__socialSvgInsta"></circle>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="sidebar__poweredCopy">
+                    <p class="sidebar__copyText">
+                        Copyright © 2021
+                        <a href="#" class="sidebar__copyLink">Cuber Theme</a>
+                    </p>
+                    <p class="sidebar__poweredText">
+                        <a href="#" class="sidebar__poweredLink">Powered by Merieli Manzano</a>
+                    </p>
+                </div>
+            </div>
+
+        </nav>
+
+        <div data-overlay></div>
+
+        <div id="SideCart" class="sidemodal" data-sidecart="menu">
+
+            <div id="SideCartBox" class="sidemodal__box">
+                <button class="sidemodal__close" aria-label="Close sidebar" title="Close sidebar" data-sidecart="close">
+                    <span class="sidemodal__hamburger" aria-hidden="true">
+                    </span>
+                </button>
+                <div class="sidecart__boxTitle">
+                    <p class="sidecart__title">
+                        Cart
+                    </p>
+                    <p class="sidecart__description" data-sidecart="countBuy">
+                        1 product in your cart
+                    </p>
+                </div>
+                <div class="sidecart__checkout">
+                    <form action="" class="sidecart__checkoutInfo">
+                        <div class="sidecart__product">
+                            <a href="#" class="sidecart__productLink">
+                                <img src="assets/img/nav/product1.jpg" alt="" class="sidecart__productImg">
+                                <div class="sidecart__productDescription">
+                                    Jacket
+                                    <strong class="sidecart__productPrice">
+                                        $80.00
+                                    </strong>
+                                </div>
+                            </a>
+                            <div class="sidecart__productQtdCart">
+                                <input type="text" class="sidecart__productQtd" value="1">
+                                <a href="#" class="sidecart__productRemove">
+                                    <svg version="1.1"
+                                    class="sidecart__svgRemove"
+                                    xmlns="//www.w3.org  /2000/svg"
+                                    xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="45px" height="45px"
+                                    viewBox="0 0 60 60"
+                                    enable-background="new 0 0 60 60"
+                                    xml:space="preserve">
+                                        <polygon points="38.936,23.561 36.814,21.439 30.562,27.691 24.311,21.439 22.189,23.561 28.441,29.812   22.189,36.064 24.311,38.186 30.562,31.934 36.814,38.186 38.936,36.064 32.684,29.812 ">
+                                        </polygon>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <textarea name="note" id="sidecartInstructions"
+                        placeholder="Special instructions for seller"
+                        aria-label="Special instructions for seller">
+                        </textarea>
+                        <div class="sidecart__bottomInfoProduct">
+                            <p id="CartTotal" class="sidecart__bottomInfoProductPrice">Total: <span class="sidecart__bottomInfoProductPrice--destaque">$80.00</span></p>
+                            <small class="sidecart__bottomInfo">Shipping &amp; taxes calculated at checkout</small>
+                
+                            <div class="sidecart__checkoutActions">
+                                <button class="sidecart__checkoutButton">Edit Cart</button>
+                                <input type="submit" name="checkout" value="Checkout" class="sidecart__checkoutButton">
+                            </div>
+                
+                          </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="SideSearch" class="sidemodal" data-sidesearch="menu">
+
+            <div class="sidemodal__box">
+                <button class="sidemodal__close" aria-label="Close sidebar" title="Close sidebar" data-sidesearch="close">
+                    <span class="sidemodal__hamburger" aria-hidden="true">
+                    </span>
+                </button>
+
+                <div class="sidesearch__boxTitle">
+                    <p class="sidesearch__title">
+                        Search
+                    </p>
+
+                    <form action="/search" method="get" class="sidesearch__form" role="search" autocomplete="off">
+                        <input type="search" name="q" value="" placeholder="Enter a keyword" class="sidesearch__formInput" aria-label="Enter a keyword" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                        <button type="submit" class="sidesearch__formBtn" aria-label="Search">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" 
+                            class="sidesearch__formBtnSvg"
+                            viewBox="0 0 24 27" style="enable-background:new 0 0 24 27; width: 24px; height: 27px;" xml:space="preserve">
+                                <path d="M10,2C4.5,2,0,6.5,0,12s4.5,10,10,10s10-4.5,10-10S15.5,2,10,2z M10,19c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7S13.9,19,10,19z"></path>
+                                <rect x="17" y="17" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -9.2844 19.5856)" width="4" height="8"></rect>
+                            </svg>
+                        </button>
+                      </form>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section id="sectionFeatured" class="featured">
+            <div id="prodFeat1box" class="featured__box featured__box--active" data-feature-slider="box">
+                <div id="prodDesc1" class="featured__product">
+                    <div class="featured__productText">
+                        <h4 class="featured__subTitle">Just Arrived</h4>
+                        <h2 class="featured__title">Unisex Backpack</h2>
+                        <p class="featured__author">by <b class="author">Rains</b></p>
+                        <a href="#" class="featured__buttonBuy">
+                            Shop Now
+                            <span class="featured__buttonBuy--icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"
+                                style="width:21px; height: 10px;" viewBox="0 0 21 10" class="featured__svg">
+                                    <path d="M21.000,5.000 L15.000,10.000 L15.000,6.000 L-0.000,6.000 L-0.000,4.000 L15.000,4.000 L15.000,0.000 L21.000,5.000 Z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="featured__productImageBox" data-feature="box">
+                    <div class="featured__prodImgBoxControl">
+                        <div id="prodFeat1" class="featured__productImage" data-feature="img">
+                            <img src="assets/img/featured/featured_1.jpg" alt="Unisex Backpack" class="feature__productImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured__slider">
+                <div class="featured__sliderIndex">
+                    <span class="featured__sliderIndexCurrent" data-feature-slider="index">
+                        1
+                    </span>
+                    
+                    <span class="featured__sliderIndexTotal">
+                        3
+                    </span>
+                </div>
+    
+                <div class="featured__sliderArrow">
+                    <span class="featured__sliderArrowPrev" data-feature-slider="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        preserveAspectRatio="xMidYMid" 
+                        style="width:21px; height: 10px; transform: rotate(180deg);" viewBox="0 0 21 10"
+                        class="featured__sliderArrowSvg">
+                            <path 
+                            d="M21.000,5.000 L15.000,10.000 L15.000,6.000 L-0.000,6.000 L-0.000,4.000 L15.000,4.000 L15.000,0.000 L21.000,5.000 Z">
+                            </path>
+                        </svg>
+                    </span>
+                    
+                    <span class="featured__sliderArrowNext" data-feature-slider="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        preserveAspectRatio="xMidYMid" 
+                        style="width:21px; height: 10px;" viewBox="0 0 21 10"
+                        class="featured__sliderArrowSvg">
+                            <path 
+                            d="M21.000,5.000 L15.000,10.000 L15.000,6.000 L-0.000,6.000 L-0.000,4.000 L15.000,4.000 L15.000,0.000 L21.000,5.000 Z">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <div id="prodFeat2box" class="featured__box" data-feature-slider="box">
+                <div id="prodDesc2" class="featured__product">
+                    <div class="featured__productText">
+                        <h4 class="featured__subTitle">Trending</h4>
+                        <h2 class="featured__title">Summer Breath</h2>
+                        <p class="featured__author">by <b class="author">Volta</b></p>
+                        <a href="#" class="featured__buttonBuy">
+                            Shop Now
+                            <span class="featured__buttonBuy--icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" style="width:21px; height: 10px;" viewBox="0 0 21 10" class="featured__svg">
+                                    <path d="M21.000,5.000 L15.000,10.000 L15.000,6.000 L-0.000,6.000 L-0.000,4.000 L15.000,4.000 L15.000,0.000 L21.000,5.000 Z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="featured__productImageBox" data-feature="box">
+                    <div class="featured__prodImgBoxControl" data-feature="controlheight">
+                        <div id="prodFeat2" class="featured__productImage" data-feature="img">
+                            <img src="assets/img/featured/featured_2.jpg" alt="Summer Breath" class="feature__productImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="prodFeat3box" class="featured__box" data-feature-slider="box">
+                <div id="prodDesc3" class="featured__product">
+                    <div class="featured__productText">
+                        <h4 class="featured__subTitle">New Collection</h4>
+                        <h2 class="featured__title">Cycling Enthusiasts</h2>
+                        <p class="featured__author">by <b class="author">Rains</b></p>
+                        <a href="#" class="featured__buttonBuy">
+                            Shop Now
+                            <span class="featured__buttonBuy--icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" style="width:21px; height: 10px;" viewBox="0 0 21 10" class="featured__svg">
+                                    <path d="M21.000,5.000 L15.000,10.000 L15.000,6.000 L-0.000,6.000 L-0.000,4.000 L15.000,4.000 L15.000,0.000 L21.000,5.000 Z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="featured__productImageBox" data-feature="box">
+                    <div class="featured__prodImgBoxControl" data-feature="controlheight">
+                        <div id="prodFeat3" class="featured__productImage" data-feature="img">
+                            <img src="assets/img/featured/featured_3.jpg" alt="Cycling Enthusiasts" class="feature__productImg" data-feature="3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newArrivals">
+            <h1 class="newsArrivals__title">____________ New Arrivals</h1>
+        </section>
+
+        <section class="category">
+            <div class="category__men">
+                <a href="#" class="category__link">
+                    <p class="category__text">Shop</p>
+                    <h2 class="category__title">men's</h2>
+                </a>
+                <span class="category__image">
+                    <img src="assets/img/category-manwomen/men.jpg" alt="" class="category__img">
+                </span>
+            </div>
+        
+            <div class="category__women">
+                <a href="#" class="category__link">
+                    <p class="category__text">Shop</p>
+                    <h2 class="category__title">women's</h2>
+                </a>
+                <span class="category__image">
+                    <img src="assets/img/category-manwomen/woman.jpg" alt="" class="category__img">
+                </span>
+            </div>
+        </section>
+
+        <section class="products">
+            <div id="productText1" class="product">
+                <div class="product__box">
+                    <h2 class="product__txtTitle">Trending</h2>
+                    <p class="product__txtSubTitle">Shop Now</p>
+                </div>
+            </div>
+
+            <div id="product1" class="product">
+                <a href="#" class="product__link">
+                    <div class="product__image">
+                        <img class="product__img" src="assets/img/products/product1.jpg" alt="Product Jacket">
+                    </div>
+                    <div class="product__txt">
+                        <div class="product__txtContent">
+                            <h3 class="product__txtName">Jacket</h3>
+                            <p class="product__txtPrice">$80,00</p>
+                        </div>
+                        <span class="product__arrow">
+                            <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="width: 41px; height: 10px;" xml:space="preserve">
+                                <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                            </svg>
+                        </span>
+                    </div>
+                    
+                </a>
+            </div>
+
+            <div id="product2" class="product">
+                <a href="#" class="product__link">
+                    <div class="product__image">
+                        <img class="product__img product__img--v1" src="assets/img/products/product2_v1.jpg" alt="Product Watch">
+                        <img class="product__img product__img--v2" src="assets/img/products/product2_v2.jpg" alt="Product Watch">
+                    </div>
+                    <div class="product__txt">
+                        <div class="product__txtContent">
+                            <h3 class="product__txtName">The Original</h3>
+                            <p class="product__txtPrice">$149,00</p>
+                        </div>
+                        <span class="product__arrow">
+                            <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                            </svg>
+                        </span>
+                    </div>
+                    
+                </a>
+            </div>
+
+            <div id="product3" class="product">
+                <a href="#" class="product__link">
+                    <div class="product__image">
+                        <img class="product__img product__img--v1" src="assets/img/products/product3_v1.jpg" 
+                        alt="Glasses Wayfarer">
+                        <img class="product__img product__img--v2" src="assets/img/products/product3_v2.jpg" 
+                        alt="Glasses Wayfarer">
+                    </div>
+                    <div class="product__txt">
+                        <div class="product__txtContent">
+                            <h3 class="product__txtName">Original Wayfarer</h3>
+                            <p class="product__txtPrice">$140,00</p>
+                        </div>
+                        <span class="product__arrow">
+                            <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="product__badge">
+                        <span class="product__badgeaText">Sold Out</span>
+                    </div>
+                </a>
+            </div>
+
+            <div id="product4" class="product">
+                <a href="#" class="product__link">
+                    <div class="product__image">
+                        <img class="product__img product__img--v1" src="assets/img/products/product4_v1.jpg" 
+                        alt="Backpack">
+                        <img class="product__img product__img--v2" src="assets/img/products/product4_v2.jpg" 
+                        alt="Product Backpack">
+                    </div>
+                    <div class="product__txt">
+                        <div class="product__txtContent">
+                            <h3 class="product__txtName">Bagpack</h3>
+                            <p class="product__txtPrice">$89,00</p>
+                        </div>
+                        <span class="product__arrow">
+                            <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                            </svg>
+                        </span>
+                    </div>
+                    
+                </a>
+            </div>
+
+            <div id="product5" class="product">
+                <a href="#" class="product__link">
+                    <div class="product__image">
+                        <img class="product__img product__img--v1" src="assets/img/products/product5_v1.jpg" 
+                        alt="Jacket Cyan">
+                        <img class="product__img product__img--v2" src="assets/img/products/product5_v2.jpg" 
+                        alt="Woman with Jacket Cyan">
+                    </div>
+                    <div class="product__txt">
+                        <div class="product__txtContent">
+                            <h3 class="product__txtName">Jacket</h3>
+                            <p class="product__txtPrice">$90,00</p>
+                        </div>
+                        <span class="product__arrow">
+                            <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="product__badge">
+                        <span class="product__badgeaText">New</span>
+                    </div>
+                </a>
+            </div>
+
+            <div id="product6" class="product">
+                <a href="#" class="product__link">
+                    <div class="product__image">
+                        <img class="product__img product__img--v1" 
+                        src="assets/img/products/product6_v1.jpg" 
+                        alt="Drop Carabiner">
+                        <img class="product__img product__img--v2" 
+                        src="assets/img/products/product6_v2.jpg" 
+                        alt="Drop Carabiner">
+                    </div>
+                    <div class="product__txt">
+                        <div class="product__txtContent">
+                            <h3 class="product__txtName">Drop Carabiner</h3>
+                            <p class="product__txtPrice">$20,00</p>
+                        </div>
+                        <span class="product__arrow">
+                            <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="product__badge">
+                        <span class="product__badgeaText">Pre order</span>
+                    </div>
+                </a>
+            </div>
+
+            <div id="product7" class="product">
+                <a href="#" class="product__link">
+                    <div class="product__image">
+                        <img class="product__img" 
+                        src="assets/img/products/product7_v1.jpg" 
+                        alt="">
+                    </div>
+                    <div class="product__txt">
+                        <div class="product__txtContent">
+                            <h3 class="product__txtName">Long Jacket</h3>
+                            <p class="product__txtPrice">$110,00</p>
+                        </div>
+                        <span class="product__arrow">
+                            <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="product__badge">
+                        <span class="product__badgeaText">New</span>
+                    </div>
+                </a>
+            </div>
+
+            <div id="product8" class="product">
+                <a href="#" class="product__link">
+                    <div class="product__image">
+                        <img class="product__img product__img--v1" src="assets/img/products/product8_v1.jpg" 
+                        alt="">
+                        <img class="product__img product__img--v2" src="assets/img/products/product8_v2.jpg" 
+                        alt="">
+                    </div>
+                    <div class="product__txt">
+                        <div class="product__txtContent">
+                            <h3 class="product__txtName">Classic Mid Nubuck</h3>
+                            <p class="product__txtPrice">$210,00</p>
+                        </div>
+                        <span class="product__arrow">
+                            <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                            </svg>
+                        </span>
+                    </div>
+                    
+                </a>
+            </div>
+
+            <div id="product9" class="product">
+                <a href="#" class="product__link">
+                    <div class="product__image">
+                        <img class="product__img product__img--v1" 
+                        src="assets/img/products/product9_v1.jpg" 
+                        alt="Woman with Short Cardigan">
+                        <img class="product__img product__img--v2" 
+                        src="assets/img/products/product9_v2.jpg" 
+                        alt="Short Cardigan">
+                    </div>
+                    <div class="product__txt">
+                        <div class="product__txtContent">
+                            <h3 class="product__txtName">Short Cardigan</h3>
+                            <p class="product__txtPrice">$150,00</p>
+                        </div>
+                        <span class="product__arrow">
+                            <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                            </svg>
+                        </span>
+                    </div>
+                    
+                </a>
+            </div>
+
+            <div id="product10" class="product">
+                <a href="#" class="product__link">
+                    <div class="product__image">
+                        <img class="product__img product__img--v1" 
+                        src="assets/img/products/product10_v1.jpg" alt="Gumsole Naked">
+                        <img class="product__img product__img--v2" 
+                        src="assets/img/products/product10_v2.jpg" alt="Gumsole Naked">
+                    </div>
+                    <div class="product__txt">
+                        <div class="product__txtContent">
+                            <h3 class="product__txtName">Gumsole Naked</h3>
+                            <p class="product__txtPrice">
+                                $190,00
+                                <del class="product__txtPrice--old">$250,00</del>
+                            </p>
+                        </div>
+                        <span class="product__arrow">
+                            <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="product__badge">
+                        <span class="product__badgeaText">Sale</span>
+                    </div>
+                </a>
+            </div>
+
+            <div id="product11" class="product">
+                <a href="#" class="product__link">
+                    <div class="product__image">
+                        <img class="product__img product__img--v1" src="assets/img/products/product11_v1.jpg" alt="">
+                        <img class="product__img product__img--v2" src="assets/img/products/product11_v2.jpg" alt="">
+                    </div>
+                    <div class="product__txt">
+                        <div class="product__txtContent">
+                            <h3 class="product__txtName">Rolltop Rucksack</h3>
+                            <p class="product__txtPrice">
+                                $115,00
+                                <del class="product__txtPrice--old">$150,00</del>
+                            </p>
+                        </div>
+                        <span class="product__arrow">
+                            <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="product__badge">
+                        <span class="product__badgeaText">Sale</span>
+                    </div>
+                </a>
+            </div>
+
+            <div id="product12" class="product">
+                <a href="#" class="product__link">
+                    <div class="product__image">
+                        <img class="product__img product__img--v1" 
+                        src="assets/img/products/product12_v1.jpg" alt="Utility Bag">
+                        <img class="product__img product__img--v2" 
+                        src="assets/img/products/product12_v2.jpg" alt="Utility Bag">
+                    </div>
+                    <div class="product__txt">
+                        <div class="product__txtContent">
+                            <h3 class="product__txtName">Utility Bag</h3>
+                            <p class="product__txtPrice">$115,00</p>
+                        </div>
+                        <span class="product__arrow">
+                            <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                            </svg>
+                        </span>
+                    </div>
+                    
+                </a>
+            </div>
+
+            <div id="product13" class="product">
+                <a href="#" class="product__link">
+                    <div class="product__image">
+                        <img class="product__img product__img--v1" 
+                        src="assets/img/products/product13_v1.jpg" 
+                        alt="Keychain">
+                        <img class="product__img product__img--v2" 
+                        src="assets/img/products/product13_v2.jpg" 
+                        alt="Keychain">
+                    </div>
+                    <div class="product__txt">
+                        <div class="product__txtContent">
+                            <h3 class="product__txtName">Keychain</h3>
+                            <p class="product__txtPrice">$20,00</p>
+                        </div>
+                        <span class="product__arrow">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve" class="product__svg">
+                                <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                            </svg>
+                        </span>
+                    </div>
+                    
+                </a>
+            </div>
+
+            <div id="product14" class="product">
+                <a href="#" class="product__link">
+                    <div class="product__image">
+                        <img class="product__img product__img--v1" src="assets/img/products/product14_v1.jpg" 
+                        alt="Ltd. Short Hooded Coat">
+                        <img class="product__img product__img--v2" src="assets/img/products/product14_v2.jpg" 
+                        alt="Ltd. Short Hooded Coat">
+
+                    </div>
+                    <div class="product__txt">
+                        <div class="product__txtContent">
+                            <h3 class="product__txtName">Ltd. Short Hooded Coat</h3>
+                            <p class="product__txtPrice">
+                                $120,00
+                                <del class="product__txtPrice--old">$140,00</del>
+                            </p>
+                        </div>
+                        <span class="product__arrow">
+                            <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="product__badge">
+                        <span class="product__badgeText">Sale</span>
+                    </div>
+                </a>
+            </div>
+
+            <div id="productText2" class="product">
+                <div class="product__txt">
+                    <p class="product__txtTitle">Want More?</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="bannerVideo">
+            <div class="bannerVideo__content">
+                <div class="bannerVideo__txt">
+                    <p class="bannerVideo__title">by RAINS</p>
+                    <h2 class="bannerVideo__subTitle">Raicoats</h2>
+                </div>
+                <div class="bannerVideo__containerVideo">
+                    <video autoplay muted loop playsinline
+                    style="opacity: 1;" class="bannerVideo__video">
+                        <source type="video/mp4"
+                        src="https://cdn.shopify.com/s/files/1/1797/5947/files/1080p.mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="productsLC">
+            
+            <div id="productLCinfo" class="productLCtxt" data-order="0">
+                <div class="procutLCtxt__content">
+                    <h2 class="procutLCtxt__title">Last Chance</h2>
+                    <a href="assets/img/products-lc/product14_v1.jpg" 
+                    class="procutLCtxt__buttonShop">Shop Now 
+                        <spam class="procutLCtxt__buttonShop--arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            preserveAspectRatio="xMidYMid" 
+                            style="width:21px; height: 10px;" viewBox="0 0 21 10">
+                                <path d="M21.000,5.000 L15.000,10.000 L15.000,6.000 L-0.000,6.000 L-0.000,4.000 L15.000,4.000 L15.000,0.000 L21.000,5.000 Z">
+                                </path>
+                            </svg>
+                        </spam>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="productsLC__list" data-order="1">
+                <div id="productLC1" class="productsLC__product">
+                    <a href="#" class="productsLC__link">
+                        <div class="productLC__image">
+                            <img src="assets/img/products-lc/product14_v1.jpg" alt="" class="productLC__img productLC__img--v1">
+                            <img src="assets/img/products-lc/product14_v2.jpg" alt="" class="productLC__img productLC__img--v2">
+                        </div>
+                        <div class="productLC__info">
+                            <div class="productLC__content">
+                                <h3 class="productLC__infoTitle">Travel Wash Bag</h3>
+                                <p class="productLC__infoPrice">$55,00</p>
+                            </div>
+                            <span class="product__arrow">
+                                <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                    <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div id="productLC2" class="productsLC__product">
+                    <a href="#" class="productsLC__link">
+                        <div class="productLC__image">
+                            <img src="assets/img/products-lc/product1.jpg" alt="" class="productLC__img productLC__img">
+                        </div>
+                        <div class="productLC__info">
+                            <div class="productLC__content">
+                                <h3 class="productLC__infoTitle">Jacket</h3>
+                                <p class="productLC__infoPrice">$80,00</p>
+                            </div>
+                            <span class="product__arrow">
+                                <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                    <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                                </svg>
+                            </span>
+                        </div>
+                        
+                    </a>
+                </div>
+                <div id="productLC3" class="productsLC__product">
+                    <a href="#" class="productsLC__link">
+                        <div class="productLC__image">
+                            <img src="assets/img/products-lc/product15_v1.jpg" alt="" class="productLC__img productLC__img--v1">
+                            <img src="assets/img/products-lc/product15_v2.jpg" alt="" class="productLC__img productLC__img--v2">
+                        </div>
+                        <div class="productLC__info">
+                            <div class="productLC__content">
+                                <h3 class="productLC__infoTitle">Jacket</h3>
+                                <p class="productLC__infoPrice">$80,00</p>
+                            </div>
+                            <span class="product__arrow">
+                                <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                    <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                                </svg>
+                            </span>
+                        </div>
+                        
+                    </a>
+                </div>
+                <div id="productLC4" class="productsLC__product">
+                    <a href="#" class="productsLC__link">
+                        <div class="productLC__image">
+                            <img src="assets/img/products-lc/product10_v1.jpg" alt="" class="productLC__img productLC__img--v1">
+                            <img src="assets/img/products-lc/product10_v2.jpg" alt="" class="productLC__img productLC__img--v2">
+                        </div>
+                        <div class="productLC__info">
+                            <div class="productLC__content">
+                                <h3 class="productLC__infoTitle">Gumsole Naked</h3>
+                                <p class="productLC__infoPrice">
+                                    $190,00
+                                    <del class="product__txtPrice--old">$250,00</del>
+                                </p>
+                            </div>
+                            <span class="product__arrow">
+                                <svg version="1.1" class="product__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 41 10" style="enable-background:new 0 0 41 10; width: 41px; height: 10px;" xml:space="preserve">
+                                    <polygon points="0,4 35,4 35,0 41,5 35,10 35,6 0,6 "></polygon>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="productLC__badge">
+                            <span class="productLC__badgeText">Sale</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="look">
+            <div class="look__boxImage">
+                <img src="assets/img/shop-the-look/look1.jpg" alt="Person with the look of the store's products" class="look__boxImg">
+            </div>
+
+            <div class="look__boxProducts m-look">
+                <div class="m-look__carousel">
+                    <h3 class="m-look__title">Shoop the Look</h3>
+                    <div class="m-look__carouselBox">
+                        <div class="m-look__viewport" data-look-slider="viewport">
+
+                            <div id="lookproduct1" class="m-look__product" data-look-slider="box">
+                                <div  class="m-look__productImage">
+                                    <img src="assets/img/shop-the-look/product-look-1.jpg" 
+                                    alt="Bagback color dark blue" class="m-look__productImg">
+                                </div>
+                                <div class="m-look__productDetails">
+                                    <div>
+                                        <h4 class="m-look__productName">
+                                            <a href="#" class="m-look__productNameLink">Bagpack</a>
+                                        </h4>
+                                        <p class="m-look__productPrice">
+                                            From $89.00
+                                        </p>
+                                    </div>
+                                    <form method="post">
+                                        <button class="m-look__button">
+                                            <svg width="24" height="28" 
+                                            viewBox="0 0 24 28" fill="none" 
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="m-look__buttonSvg">
+                                                <path d="M11 11H13V16H18V18H13V23H11V18H6V16H11V11Z" 
+                                                fill="black"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" 
+                                                d="M24 6V28H0V6H6V5.25C6.125 2 8.56667 0 12 0C15.4333 0 18 2 18 5.25V6H24ZM8 5.5V6H16V5.375C16 3.5 14.5 2 12 2C9.5 2 8 3.5 8 5.5ZM2 8V26H22V8H2Z" 
+                                                fill="black"></path>
+                                            </svg>                                      </button>
+                                    </form>
+                                </div>                                
+                            </div>
+
+                            <div id="lookproduct2" class="m-look__product" data-look-slider="box">
+                                <div  class="m-look__productImage">
+                                    <img src="assets/img/shop-the-look/product-look-2.jpg" 
+                                    alt="Drop Carabiner color yellow" class="m-look__productImg">
+                                </div>
+                                <div class="m-look__productDetails">
+                                    <div>
+                                        <h4 class="m-look__productName">
+                                            <a href="#" class="m-look__productNameLink">Drop Carabiner</a>
+                                        </h4>
+                                        <p class="m-look__productPrice">
+                                            $20.00
+                                        </p>
+                                    </div>
+                                    <form method="post">
+                                        <button class="m-look__button">
+                                            <svg width="24" height="28" 
+                                            viewBox="0 0 24 28" fill="none" 
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="m-look__buttonSvg">
+                                                <path d="M11 11H13V16H18V18H13V23H11V18H6V16H11V11Z" 
+                                                fill="black"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" 
+                                                d="M24 6V28H0V6H6V5.25C6.125 2 8.56667 0 12 0C15.4333 0 18 2 18 5.25V6H24ZM8 5.5V6H16V5.375C16 3.5 14.5 2 12 2C9.5 2 8 3.5 8 5.5ZM2 8V26H22V8H2Z" 
+                                                fill="black"></path>
+                                            </svg>                                    
+                                        </button>
+                                    </form>
+                                </div>                                
+                            </div>
+
+                            <div id="lookproduct3" class="m-look__product" data-look-slider="box">
+                                <div  class="m-look__productImage">
+                                    <img src="assets/img/shop-the-look/product-look-3.jpg" 
+                                    alt="People with Jacket in color yellow" class="m-look__productImg">
+                                </div>
+                                <div class="m-look__productDetails">
+                                    <div>
+                                        <h4 class="m-look__productName">
+                                            <a href="#" class="m-look__productNameLink">Jacket</a>
+                                        </h4>
+                                        <p class="m-look__productPrice">
+                                            $80.00
+                                        </p>
+                                    </div>
+                                    <form method="post">
+                                        <button class="m-look__button">
+                                            <svg width="24" height="28" 
+                                            viewBox="0 0 24 28" fill="none" 
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="m-look__buttonSvg">
+                                                <path d="M11 11H13V16H18V18H13V23H11V18H6V16H11V11Z" 
+                                                fill="black"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" 
+                                                d="M24 6V28H0V6H6V5.25C6.125 2 8.56667 0 12 0C15.4333 0 18 2 18 5.25V6H24ZM8 5.5V6H16V5.375C16 3.5 14.5 2 12 2C9.5 2 8 3.5 8 5.5ZM2 8V26H22V8H2Z" 
+                                                fill="black"></path>
+                                            </svg>                                   
+                                        </button>
+                                    </form>
+                                </div>                                
+                            </div>
+
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="look__navArrows">
+                <span class="look__navPrev" data-look-slider="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    preserveAspectRatio="xMidYMid" 
+                    style="width:21px; height: 10px; transform: rotate(180deg);" viewBox="0 0 21 10"
+                    class="look__navSvg">
+                        <path 
+                        d="M21.000,5.000 L15.000,10.000 L15.000,6.000 L-0.000,6.000 L-0.000,4.000 L15.000,4.000 L15.000,0.000 L21.000,5.000 Z">
+                        </path>
+                    </svg>
+                </span>
+
+                <div class="look__navNumber">
+                    <span class="look__navCurrent" data-look-slider="index">
+                        1
+                    </span>
+                    <span class="look__navTotal">3</span>
+                </div>
+
+                <span class="look__navNext" data-look-slider="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    preserveAspectRatio="xMidYMid" 
+                    style="width:21px; height: 10px;" viewBox="0 0 21 10"
+                    class="look__navSvg">
+                        <path 
+                        d="M21.000,5.000 L15.000,10.000 L15.000,6.000 L-0.000,6.000 L-0.000,4.000 L15.000,4.000 L15.000,0.000 L21.000,5.000 Z">
+                        </path>
+                    </svg>
+                </span>
+            </div>
+
+        </section>
+
+        <section class="news">
+            <div class="news__boxBlog">
+                <div class="news__boxContent">
+                    <h2 class="news__title">Latest News</h2>
+                    <a href="#" class="news__buttonBlog">
+                        Visit Blog
+                        <spam class="news__buttonBlog--arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMidYMid"
+                            style="width:21px; height: 10px;" viewBox="0 0 21 10">
+                                <path d="M21.000,5.000 L15.000,10.000 L15.000,6.000 L-0.000,6.000 L-0.000,4.000 L15.000,4.000 L15.000,0.000 L21.000,5.000 Z">
+                                </path>
+                            </svg>
+                        </spam>
+                    </a>
+                </div>
+            </div>
+
+            <div class="news__boxArticles m-news">
+                <div class="m-news__list">
+                    <a href="#" id="article1" class="m-news__article">
+                        <article class="m-news__articleContent">
+                            <div class="m-news__articleText">
+                                <div class="m-news__title">
+                                    <h3 class="m-news__textTitle">
+                                        It rains in Antwerp
+                                    </h3>
+                                </div>
+                                <p class="m-news__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Alias dolore labore nam quod optio sint veritatis maxime
+                                    distinctio...
+                                </p>
+                            </div>
+
+                            <div class="m-news__background">
+                                <img src="assets/img/last-news/news-1.jpg" alt="" class="m-news__backgroundImg">
+                            </div>
+                            
+                        </article>
+                    </a>
+
+                    <a href="#" id="article2" class="m-news__article">
+                        <article class="m-news__articleContent">
+                            <div class="m-news__articleText">
+                                <div class="m-news__title">
+                                    <h3 class="m-news__textTitle">
+                                        Rains journal - issue ten
+                                    </h3>
+                                </div>
+                                <p class="m-news__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Alias dolore labore nam quod optio sint veritatis maxime
+                                    distinctio...
+                                </p>
+                            </div>
+
+                            <div class="m-news__background">
+                                <img src="assets/img/last-news/news-2.jpg" alt="" class="m-news__backgroundImg">
+                            </div>
+                            
+                        </article>
+                    </a>
+
+                    <a href="#" id="article3" class="m-news__article">
+                        <article class="m-news__articleContent">
+                            <div class="m-news__articleText">
+                                <div class="m-news__title">
+                                    <h3 class="m-news__textTitle">
+                                        Rains meets Andrew Salgado
+                                    </h3>
+                                </div>
+                                <p class="m-news__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Alias dolore labore nam quod optio sint veritatis maxime
+                                    distinctio...
+                                </p>
+                            </div>
+
+                            <div class="m-news__background">
+                                <img src="assets/img/last-news/news-3.jpg" alt="" class="m-news__backgroundImg">
+                            </div>
+                            
+                        </article>
+                    </a>
+
+                    <a href="#" id="article4" class="m-news__article">
+                        <article class="m-news__articleContent">
+                            <div class="m-news__articleText">
+                                <div class="m-news__title">
+                                    <h3 class="m-news__textTitle">
+                                        Official opening of Rains store Melbourne
+                                    </h3>
+                                </div>
+                                <p class="m-news__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Alias dolore labore nam quod optio sint veritatis maxime
+                                    distinctio...
+                                </p>
+                            </div>
+
+                            <div class="m-news__background">
+                                <img src="assets/img/last-news/news-4.jpg" alt="" class="m-news__backgroundImg">
+                            </div>
+                            
+                        </article>
+                    </a>      
+
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <article id="testimonial-title" class="testimonial">
+                <div class="testimonial__content">
+                    <h2 class="testimonial__title">Testimonials</h2>
+                    <p class="testimonial__author">Share your client's stories</p>
+                </div>
+            </article>
+
+            <article id="testimonial-people1" class="testimonial">
+                <div class="testimonial__people">
+                    <div class="testimonial__avatar">
+                        <img src="assets/img/testimonials/testimonials1_70x70.jpg" alt="" class="testimonial__img">
+                    </div>
+
+                    <div class="testimonial__text">
+                        <blockquote class="testimonial__quote">
+                            <p>
+                                "I'm waiting for my orders but for now all has gone 
+                                perfectly. 5 deserved stars!"
+                            </p>
+                        </blockquote>
+                        <p class="testimonial__author">by harsimran on 1 Jun 2016</p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="testimonial-people2" class="testimonial">
+                <div class="testimonial__people">
+                    <div class="testimonial__avatar">
+                        <img src="assets/img/testimonials/testimonials2_70x70.jpg" alt="" class="testimonial__img">
+                    </div>
+
+                    <div class="testimonial__text">
+                        <blockquote class="testimonial__quote">
+                            <p>
+                                "I love this site, it looks good and really 
+                                simple to use! Thanks!"
+                            </p>
+                        </blockquote>
+                        <p class="testimonial__author">
+                            by Katherine P. on 9 Jun 2016
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="testimonial-people3" class="testimonial">
+                <div class="testimonial__people">
+                    <div class="testimonial__avatar">
+                        <img src="assets/img/testimonials/testimonials3_70x70.jpg" alt="" class="testimonial__img">
+                    </div>
+
+                    <div class="testimonial__text">
+                        <blockquote class="testimonial__quote">
+                            <p>
+                                Fast, helpful and friendly.
+                            </p>
+                        </blockquote>
+                        <p class="testimonial__author">by KOKOTOO 19 Jan 2017</p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="testimonial-people4" class="testimonial">
+                <div class="testimonial__people">
+                    <div class="testimonial__avatar">
+                        <img src="assets/img/testimonials/testimonials4_70x70.jpg" alt="" class="testimonial__img">
+                    </div>
+
+                    <div class="testimonial__text">
+                        <blockquote class="testimonial__quote">
+                            <p>
+                                Absolutely love their products! 10/10 - Thanks guys!
+                            </p>
+                        </blockquote>
+                        <p class="testimonial__author">by Kate Smith on 2 Feb 2017</p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="testimonial-people5" class="testimonial">
+                <div class="testimonial__people">
+                    <div class="testimonial__avatar">
+                        <svg version="1.1" class="testimonial__avatarSvg" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        x="0px" y="0px" viewBox="0 0 151 151" 
+                        style="enable-background:new 0 0 151 75; width: 75px; height: 75px;" 
+                        xml:space="preserve">
+                            <path 
+                            d="M25,158.2V125c0-17.9,13.8-32.5,31.3-33.4l1.9-0.1v-8l-0.5-0.6c-3.8-4.3-5.8-9.6-5.8-15.4V56c0-13.1,10.6-23.7,23.7-23.7
+                            h0.7c13.1,0,23.7,10.6,23.7,23.7v11.5c0,5.7-2.1,11.1-5.8,15.4l-0.5,0.6v8l1.9,0.1c17.6,1,31.4,15.7,31.4,33.4v33.2H25z M56.7,96.8
+                            C42,97.3,30,110.1,30,125.2v28.5h92v-28.5c0-15.3-11.7-27.8-26.7-28.4l-1.6-0.1l-0.4,1.6c-2,8.1-9.1,13.7-17.3,13.7
+                            c-8.2,0-15.3-5.7-17.3-13.7l-0.4-1.6L56.7,96.8z M63.2,93.7c0,7.2,5.7,13.1,12.8,13.1s12.8-5.9,12.8-13.1V88L86,89.2
+                            c-3,1.3-6.1,2-9.6,2h-0.7c-3.5,0-6.6-0.6-9.6-2L63.2,88V93.7z M75.6,37.3c-10.3,0-18.7,8.4-18.7,18.7v11.5
+                            c0,10.3,8.4,18.7,18.7,18.7h0.7c10.3,0,18.7-8.4,18.7-18.7V56c0-10.3-8.4-18.7-18.7-18.7H75.6z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <div class="testimonial__text">
+                        <blockquote class="testimonial__quote">
+                            <p>
+                                LOVE!!!!!!!!!! Fast response times and very 
+                                professional.
+                            </p>
+                        </blockquote>
+                        <p class="testimonial__author">by Tommy on 1 Jun 2016</p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="testimonial-people6" class="testimonial">
+                <div class="testimonial__people">
+                    <div class="testimonial__avatar">
+                        <img src="assets/img/testimonials/testimonials6_70x70.jpg" alt="" class="testimonial__img">
+                    </div>
+
+                    <div class="testimonial__text">
+                        <blockquote class="testimonial__quote">
+                            <p>
+                                Quality is amazing and even more amazing variations! 
+                                Good job!
+                            </p>
+                        </blockquote>
+                        <p class="testimonial__author">by Katherine P. on 9 Jun 2016</p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter__content">
+                <h3 class="newsletter__title">Newsletter</h3>
+                <h4 class="newsletter__text">
+                    Sign up and stay up to date with our latest offers!
+                </h4>
+                <form action="" class="newsletter__form">
+                    <input type="email" placeholder="Email Address" name="contact-email" id="newsletter-email">
+                    <button type="submit" id="newsletter-button" class="newsletter__formButton">Sign Up</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about__learnMore">
+                <div class="about__learnMoreBox">
+                    <h2 class="about__title">Get to Know Us</h2>
+                    <a href="" class="about__button">
+                        <span>Learn More</span>
+                        <span class="about__buttonArrow">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMidYMid" style="width:21px; height: 10px;"
+                            viewBox="0 0 21 10">
+                                <path
+                                d="M21.000,5.000 L15.000,10.000 L15.000,6.000 L-0.000,6.000 L-0.000,4.000 L15.000,4.000 L15.000,0.000 L21.000,5.000 Z">
+                                </path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <span class="about__background"></span>
+            </div>
+
+            <div class="about__rains">
+                <div class="about__content">
+                    <h3 class="about__titleText">Rains</h3>
+                    <p class="about__text">
+                        <strong>RAINS</strong> Lorem ipsum dolor sit amet consectetur, 
+                        adipisicing elit. Adipisci alias nostrum consequuntur animi 
+                        blanditiis voluptatum aliquid ipsum impedit, eos molestias nihil 
+                        dolorem sint dolor debitis, unde rem quos? Quae, voluptates. Lorem 
+                        ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, 
+                        adipisicing elit. Adipisci alias nostrum consequuntur animi.
+                    </p>
+                    <p class="about__text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+                        et officia veritatis esse aliquam, vero velit consequatur incidunt,
+                        itaque quaerat exercitationem, provident delectus. Asperiores,
+                        deleniti in pariatur architecto debitis quo? Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Lorem ipsum dolor sit.
+                    </p>
+                    <p class="about__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                        necessitatibus illum. Molestias itaque placeat neque esse animi
+                        consequatur accusantium illum sit eius odit cumque voluptatibus
+                        veniam.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__navigation">
+            <div class="footer__selection">
+                <form action="" class="footer__selectionForm">
+                    <select name="language-site" id="sellang" class="footer__select">
+                        <option class="footer__selectionOption" value="english">English</option>
+                        <option class="footer__selectionOption" value="espanish">Español</option>
+                        <option class="footer__selectionOption" value="french">Français</option>
+                    </select>
+                    <select name="currency-site" id="selcurrency" class="footer__select">
+                        <option  value="aud" class="footer__selectionOption">AUD $</option>
+                        <option class="footer__selectionOption" value="czk">CZK Kč</option>
+                        <option class="footer__selectionOption" value="eur">EUR €</option>
+                        <option class="footer__selectionOption" value="gbp">GBP £</option>
+                        <option class="footer__selectionOption" value="jpy">JPY ¥</option>
+                        <option class="footer__selectionOption" value="aud">USD $</option>
+                    </select>
+                </form>
+            </div>
+
+            <div class="footer__social">
+                <h4 class="footer__titulo">
+                    Follow Us
+                </h4>
+                <div class="footer__socialLinks">
+                    <a href="https://twitter.com/krownthemes" target="_blank" 
+                    rel="external" class="footer__socialLink">
+                        <span class="footer__socialIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" class="footer__socialSvg">
+                                <path 
+                                d="M25.83 5.57c-.94.47-2 .7-3.05.82 1.06-.7 1.88-1.64 2.35-2.94-1.06.6-2.1 1.06-3.4 1.3-.94-1.06-2.35-1.64-3.87-1.64-2.94 0-5.28 2.35-5.28 5.28 0 .47 0 .82.12 1.17-4.47-.23-8.35-2.34-10.93-5.5-.47.82-.7 1.64-.7 2.7 0 1.88.94 3.4 2.35 4.46a4.25 4.25 0 0 1-2.35-.7v.12c0 2.58 1.88 4.7 4.23 5.17-.47 0-.94.12-1.4.12-.35 0-.7 0-.94-.12.6 2.1 2.58 3.64 4.93 3.64-1.88 1.53-4.1 2.35-6.58 2.35-.47 0-.82 0-1.3-.12C2.35 23.18 5.17 24 8.1 24c9.75 0 15.03-8.1 15.03-15.03v-.7a9.91 9.91 0 0 0 2.7-2.7z">
+                                </path>
+                            </svg>
+                        </span>
+                    </a>
+
+                    <a href="" target="_blank" rel="external" class="footer__socialLink">
+                        <span class="footer__socialIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" class="footer__socialSvg">
+                                <path 
+                                d="M24.99,0H1.16C0.43,0,0,0.43,0,1.01v23.83C0,25.57,0.43,26,1.16,26h12.71v-9.82h-3.32v-4.04h3.32V8.96c0-3.32,2.17-5.06,5.06-5.06c1.44,0,2.6,0.14,3.03,0.14v3.47h-2.02c-1.59,0-2.02,0.72-2.02,1.88v2.74h4.04l-0.87,4.04h-3.32V26h6.93c0.58,0,1.16-0.43,1.16-1.16V1.01C26,0.43,25.57,0,24.99,0z">
+                                </path>
+                        </svg>
+                        </span>
+                    </a>
+
+                    <a href="" target="_blank" rel="external" class="footer__socialLink">
+                        <span class="footer__socialIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" class="footer__socialSvg">
+                                <path 
+                                d="M13 2.4l5.2.1c1.3.1 1.9.3 2.4.4.6.2 1 .5 1.5 1s.7.9 1 1.5c.2.5.4 1.1.4 2.4.1 1.4.1 1.8.1 5.2l-.1 5.2c-.1 1.3-.3 1.9-.4 2.4-.2.6-.5 1-1 1.5s-.9.7-1.5 1c-.5.2-1.1.4-2.4.4-1.4.1-1.8.1-5.2.1s-3.9 0-5.2-.1-1.9-.3-2.4-.4c-.6-.2-1-.5-1.5-1s-.7-.9-1-1.5c-.2-.5-.4-1.1-.4-2.4-.1-1.4-.1-1.8-.1-5.2l.1-5.2c.1-1.3.3-1.9.4-2.4.2-.6.5-1 1-1.5s.9-.7 1.5-1c.5-.2 1.1-.4 2.4-.4 1.3-.1 1.7-.1 5.2-.1m0-2.3L7.7.2C6.3.2 5.4.4 4.5.7c-.8.4-1.5.8-2.3 1.5C1.5 3 1.1 3.7.7 4.5.4 5.4.2 6.3.1 7.7V13l.1 5.3c.1 1.4.3 2.3.6 3.1.3.9.8 1.6 1.5 2.3s1.4 1.2 2.3 1.5c.8.3 1.8.5 3.1.6 1.4.1 1.8.1 5.3.1l5.3-.1c1.4-.1 2.3-.3 3.1-.6.9-.3 1.6-.8 2.3-1.5s1.2-1.4 1.5-2.3c.3-.8.5-1.8.6-3.1.1-1.4.1-1.8.1-5.3l-.1-5.3c-.1-1.4-.3-2.3-.6-3.1-.3-.9-.8-1.6-1.5-2.3S22.3 1.1 21.4.8c-.8-.3-1.8-.5-3.1-.6S16.5.1 13 .1zm0 6.3c-3.7 0-6.6 3-6.6 6.6s3 6.6 6.6 6.6 6.6-3 6.6-6.6-2.9-6.6-6.6-6.6zm0 10.9c-2.4 0-4.3-1.9-4.3-4.3s1.9-4.3 4.3-4.3 4.3 1.9 4.3 4.3-1.9 4.3-4.3 4.3z">
+                                </path>
+                                <circle cx="19.9" cy="6.1" r="1.6" class="footer__socialSvgInsta"></circle>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+                <p class="footer__socialText">
+                    Be the first who learns about our great promotions!
+                </p>
+            </div>
+
+            <div class="footer__menu">
+                <h4 class="footer__menuTitle">Footer Menu</h4>
+                <ul class="footer__menuList">
+                    <li class="footer__menuItemList">
+                        <a href="#" id="menuLink1" class="footer__menuLink">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li class="footer__menuItemList">
+                        <a href="#" id="menuLink4" class="footer__menuLink">
+                            Shipping
+                        </a>
+                    </li>
+
+                    <li class="footer__menuItemList">
+                        <a href="#" id="menuLink2" class="footer__menuLink">
+                            Returns
+                        </a>
+                    </li>
+
+                    <li class="footer__menuItemList">
+                        <a href="#" id="menuLink5" class="footer__menuLink">
+                            Sizing Guide
+                        </a>
+                    </li>
+                    
+                    <li class="footer__menuItemList">
+                        <a href="#" id="menuLink3" class="footer__menuLink">
+                            FAQ
+                        </a>
+                    </li>
+                    
+                    <p class="footer__poweredCopy">
+                        <span class="footer__copyText">
+                            Copyright © 2021
+                            <a href="#" class="footer__copyLink">Cuber Theme</a>
+                        </span>
+                    </p>
+                </ul>
+            </div>
+
+        </div>
+            
+        <div class="footer__contact">
+            <div class="footer__customerNewsletter">
+                <div class="footer__customer">
+                    <h4 class="footer__menuTitle">Customer Service</h4>
+                    <a href="#">
+                        <span class="footer__customerInfo">
+                            +1 200 884 9600
+                        </span>
+                    </a>
+                    <p class="footer__socialText">
+                        Free helpline for stationery and mobile phones
+                    </p>
+                </div>
+
+                <div class="footer__newsletterShort">
+                    <h4 class="footer__menuTitle">Newsletter</h4>
+                    <form method="POST" action="" class="footer__form">
+                        <input type="email" 
+                        placeholder="Email Address" 
+                        name="contact-email" id="email">
+                        <button type="submit"
+                        class="footer__newsletterShortButton" 
+                        id="Subscribe">
+                            Sign Up
+                        </button>
+                    </form>
+                    <p class="footer__socialText">
+                        Invite customers to join your newsletter.
+                        <br>
+                        Link to your <a href="#" class="footer__socialLinkPrivacy">privacy policy</a>
+                    </p>
+
+                    <p class="footer__poweredCopy">
+                        <span class="footer__copyText">
+                            <a href="#" class="footer__poweredLink">Powered by Merieli Manzano</a>
+                        </span>
+                    </p>
+                    <p class="footer__poweredCopy--bottom">
+                        <span class="footer__copyText">
+                            Copyright © 2021
+                            <a href="#" class="footer__copyLink">Cuber Theme</a>
+                        </span>
+                        <span class="footer__poweredText">
+                            <a href="#" class="footer__poweredLink">Powered by Merieli Manzano</a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        
+        
+    </footer>
+     <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

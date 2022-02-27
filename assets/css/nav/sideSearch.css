@@ -1,0 +1,41 @@
+.sidesearch__title{
+    align-items: center;
+    display: flex;
+    font-size: var(--font14px);
+    height: 96px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.sidesearch__form{
+    height: 55px;
+    width: 100%;
+}
+
+.sidesearch__formInput{
+    background: var(--colorButSale);
+    border: none;
+    font-size: .9375rem;
+    font-weight: var(--fontWeightBody);
+    height: inherit;
+    padding: 0 40px 0 20px;
+    width: inherit;
+}
+
+.sidesearch__formInput:focus{
+    background: #e8e8e871;
+}
+
+.sidesearch__formBtn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 61px;
+    top: 109px
+}
+
+.sidesearch__formBtnSvg path, 
+.sidesearch__formBtnSvg rect{
+    fill: #3737371e;
+}

@@ -1,0 +1,220 @@
+.sidebar{
+    overflow: overlay;
+}
+
+.sidebar__titleList{
+    align-items: center;
+    display: flex;
+    font-size: var(--font14px);
+    height: 96px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.sidebar__listBox{
+    font-size: 1.375rem;
+    padding: 25px 0 50px;
+}
+
+.sidebar__lista01,
+.sidebar__lista02{
+    width: 100%;
+}
+
+.sidebar__lista01{
+    margin-bottom: 40px;
+    padding: 15px 0 5px 0;
+}
+
+.sidebar__lista01Item,
+.sidebar__lista02Item{
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+.sidebar__lista01Item{
+    font-size: 1.875rem;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.sidebar__lista01Link{
+    font-weight: var(--fontWeightMenuBold);
+    transition: all 150ms linear;
+}
+
+.sidebar__lista01Link:hover{
+    color: var(--colorButh);
+}
+
+.sidebar__lista02Item{
+    font-size: var(--font15px);
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.sidebar__lista02Link,
+.sidebar__lista02Link--promotion{
+    transition: all 150ms linear;
+}
+
+.sidebar__lista02Link--promotion{
+    text-transform: uppercase;
+}
+
+.sidebar__lista02Link:hover,
+.sidebar__lista02Link--promotion:hover{
+    color: var(--colorButh);
+}
+
+.sidebar__lista02Login{
+    font-size: var(--font15px);
+    margin: 52px 0 12px 0;
+}
+
+.sidebar__lookbook{
+    align-items: center;
+    display: table;
+    height: var(--alturaLookBook);
+    --alturaLookBook: 262px;
+    object-fit: cover;
+    text-align: center;
+    width: 100%;
+}
+
+.sidebar__lookbookBox {
+    display: table-cell;
+    height: var(--alturaLookBook);
+    margin-bottom: 50px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    z-index: 1;
+}
+
+.sidebar__lookbookImg {
+    background: url(../../img/nav/look-book.jpg);
+    background-size: cover;
+    background-position: center;
+    height: var(--alturaLookBook);
+    width: calc(100% - 100px);
+    position: absolute;
+    left: 50px;
+    z-index: 0;
+}
+
+.sidebar__lookbookImg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .4;
+} 
+
+.sidebar__lookbookTitle{
+    color: var(--colorBackText);
+    font-size: 1.375rem;
+    line-height: 1.1;
+    margin: 0 0 22px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.sidebar__lookbookText{
+    color: var(--colorBackText);
+    font-size: .875rem;
+    margin: 0 0 24px;
+    position: relative;
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar__lookbookButton{
+    background: var(--colorBackText);
+    color: var(--colorButText);
+    display: inline-block;
+    font-size: .8125rem;
+    font-weight: var(--fontWeightBodyBold);
+    line-height: 1.2;
+    padding: 15px 29px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 150ms linear;
+}
+
+.sidebar__lookbookButton:hover{
+    padding: 15px 35px;
+}
+
+.sidebar__socialSvg{
+    width: 26px;
+    height: 26px;  
+    transition: opacity 150ms linear,color 150ms linear,background 150ms linear;
+}
+
+.sidebar__socialLinks{
+    margin: 50px 0 30px 0;
+}
+
+.sidebar__socialLink{
+    margin: 0 5px;
+}
+
+.sidebar__socialSvg path,
+.sidebar__socialSvg circle.sidebar__socialSvgInsta{
+    fill: var(--colorDetBut);
+    opacity: .62;
+    transition: all 150ms linear;
+}
+
+.sidebar__socialSvg:hover path,
+.sidebar__socialSvg:hover circle.sidebar__socialSvgInsta{
+    fill: var(--colorButTex);
+    opacity: 1;
+}
+
+.sidebar__copyText,
+.sidebar__poweredText{
+    font-size: var(--font12px);
+    line-height: 1.5;
+    margin: 0;
+    opacity: .72;
+    transition: all 150ms linear;
+}
+
+.sidebar__poweredLink:hover{
+    color: var(--colorButh);
+}
+
+.sidebar__copyLink:hover{
+    color: var(--colorButh);
+}
+
+
+/* Responsividade: */
+
+@media screen and (max-width: 374px) {
+    .sidebar__lookbookImg {
+        width: calc(100% - 30px);
+        left: 15px;
+    }
+}
+
+@media screen and (min-width: 374px) and (max-width: 640px) {
+    .sidebar__lookbookImg {
+        width: calc(100% - 60px);
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 938px) {
+    .sidebar__lista01Item{
+        font-size: 1.375rem;
+    }    
+}

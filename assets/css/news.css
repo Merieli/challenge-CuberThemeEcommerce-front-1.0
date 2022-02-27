@@ -1,0 +1,246 @@
+@charset "UFT-8";
+
+.news{
+    height: auto;
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.news__boxBlog{
+    align-items: center;
+    align-content: baseline;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+.news__boxContent{
+    width: 50%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.news__title{
+    font-size: 4vw;
+    line-height: 1.1;
+}
+
+.news__buttonBlog{
+    background-color: var(--colorButText);
+    color: var(--colorBackText);
+    display: inline-block;
+    font-size: var(--font13px);
+    font-weight: var(--fontWeightBodyBold);
+    height: 55px;
+    line-height: 53px;
+    margin-top: 65px;
+    padding: 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 150ms linear,
+    opacity 150ms linear,
+    color 150ms linear,
+    padding .3s linear;
+}
+
+.news__buttonBlog--arrow{
+    padding-left: 8px;
+    display: none;
+}
+
+.news__buttonBlog--arrow path{
+    fill: var(--colorBackText);
+}
+
+.news__buttonBlog:hover{
+    background-color: var(--colorButh);
+}
+
+.news__buttonBlog:hover
+.news__buttonBlog--arrow{
+    display: inline-block;
+}
+
+.news__boxArticles{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.m-news__list{
+    width: 100%;
+}
+
+.m-news__articleContent, .m-news__article {
+    display: block;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.m-news__article:hover
+.m-news__background{
+    transform: scale(1.05);
+}
+
+.m-news__article:hover
+.m-news__background::after{
+    opacity: .7;
+}
+
+.m-news__background{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: transform .3s linear;
+    width: 100%;
+    z-index: 0;
+}
+
+.m-news__background::after{
+    background-color: black;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    transition: opacity .3s linear;
+    width: 100%;
+}
+
+.m-news__backgroundImg{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    transform: translate3d(0,0,0);
+    object-fit: cover;
+
+}
+
+
+.m-news__articleText{
+    color: var(--colorBackText);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 0 10%;
+    position: relative;
+    transition: all 250ms cubic-bezier(.39, .575, .565, 1),background 150ms linear;
+    z-index: 1;
+}
+
+.m-news__textTitle{
+    font-size: var(--font28px);
+}
+
+.m-news__text{
+    font-size: var(--font14px);
+    line-height: 1.8;
+}
+
+.m-news__textTitle::after{
+    background: var(--colorBackText);
+    content: "";
+    display: block;
+    height: 3px;
+    margin-top: 35px;
+    width: 40px;
+}
+
+
+@media screen and (max-width: 480px){
+    .news{
+        flex-wrap: wrap;
+    }
+
+    .news__boxBlog{
+        width: 100%;
+        flex-basis: 100%;
+        height: 50vh;
+        position: relative;
+        text-align: center;
+    }
+
+    .news__boxArticles{
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .news__boxContent{
+        padding: 0 15%;
+        width: 70%;
+    }
+
+    .m-news__articleText{
+        padding: 0 30px;
+    }
+
+    .news__title{
+        font-size: 1.75rem;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 928px){
+    .news{
+        flex-wrap: wrap;
+    }
+
+    .news__boxBlog{
+        width: 100%;
+        flex-basis: 100%;
+        height: 50vh;
+        position: relative;
+        text-align: center;
+    }
+
+    .news__boxArticles{
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .news__boxContent{
+        padding: 0 15%;
+        width: 70%;
+    }
+
+    .news__title{
+        font-size: 3rem;
+    }
+
+    .m-news__articleText{
+        padding: 0 30px;
+    }
+}
+
+
+@media screen and (min-width: 928px) and (max-width: 1024px){
+    .news__boxContent{
+        padding: 0 15%;
+        width: 70%;
+    }
+}

@@ -1,0 +1,112 @@
+@charset "UFT-8";
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local(''),
+    url('../fonts/montserrat-v18-latin-300.woff2') format('woff2'), 
+    url('../fonts/montserrat-v18-latin-300.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap; /* enquanto o navegador não tiver a fonte ele não vai renderizar */
+    src: local(''),
+        url('../fonts/montserrat-v18-latin-regular.woff2') format('woff2'), 
+        url('../fonts/montserrat-v18-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local(''),
+        url('../fonts/montserrat-v18-latin-500.woff2') format('woff2'), 
+        url('../fonts/montserrat-v18-latin-500.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local(''),
+        url('../fonts/montserrat-v18-latin-600.woff2') format('woff2'), 
+        url('../fonts/montserrat-v18-latin-600.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local(''),
+        url('../fonts/montserrat-v18-latin-700.woff2') format('woff2'), 
+        url('../fonts/montserrat-v18-latin-700.woff') format('woff');
+}
+
+:root{
+    --colorBackText: #ffffff;
+    --colorButText: #252525;
+    --colorBack: #f0f0f0;
+    --colorBackTop: #e2e3e6;
+    --colorButSale: #e8e8e8;
+    --colorButh: #5929ff;
+    --colorBackFoot: #313739;
+    --colorDetBut: #373737;
+
+    --fontStackHeadings: 'Montserrat', sans-serif;
+    --fontWeightHeadings: 700;
+    --fontStyleHeadings: normal;
+    --fontStackBody: 'Montserrat', sans-serif;
+    --fontWeightBody: 500;
+    --fontWeightBodyBold: 700;
+    --fontStyleBody: normal;
+    --fontStackMenu: 'Montserrat', sans-serif;
+    --fontWeightMenu: 500;
+    --fontWeightMenuBold: 600;
+    --fontStyleMenu: normal;
+
+    --font12px: 0.75rem;
+    --font13px: 0.813rem;
+    --font14px: 0.875rem;
+    --font15px: 0.938rem;
+    --font16px: 1rem;
+    --font18px: 1.125rem;
+    --font24px: 1.5rem;
+    --font28px: 1.75rem;
+    --font32px: 2rem;
+    --font37px: 2.313rem;
+    --font40px: 2.5rem;
+    --font42px: 2.625rem;
+    --font45px: 2.813rem;
+    --font48px: 3rem;
+}
+
+body{
+    color: var(--colorButText);
+    font-family: var(--fontStackBody);
+    font-size: 16px;
+    font-weight: var(--fontWeightBody);
+}
+
+a{
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--fontStackHeadings);
+    font-size: var(--font42px);
+    font-weight: var(--fontWeightHeadings);
+    line-height: 1.55;
+}
+
+.author{
+    font-weight: var(--fontWeightBody);
+    text-transform: uppercase;
+}

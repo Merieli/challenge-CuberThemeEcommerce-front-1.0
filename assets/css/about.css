@@ -1,0 +1,228 @@
+.about{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.about__learnMore{
+    align-items: center;
+    background-color: var(--colorBack);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    width: 50%;
+} 
+
+.about__rains{
+    align-items: center;
+    background-color: var(--colorBack);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding: 100px 0;
+    position: relative;
+    width: 50%;
+}
+
+.about__learnMoreBox{
+    position: absolute;
+    width: 50%;
+    z-index: 1;
+}
+
+.about__title{
+    color: var(--colorBackText);
+    font-size: 4vw;
+    line-height: 1.1;
+}
+
+.about__button{
+    background-color: var(--colorBackText);
+    display: inline-block;
+    font-size: var(--font13px);
+    font-weight: var(--fontWeightBodyBold);
+    height: 55px;
+    line-height: 53px;
+    margin-top: 65px;
+    padding: 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 150ms linear,
+    opacity 150ms linear,
+    color 150ms linear,
+    padding .2s linear;
+}
+
+.about__buttonArrow path{
+    fill: var(--colorBackText);
+}
+
+.about__buttonArrow{
+    padding-left: 8px;
+    display: none;
+}
+
+.about__button:hover
+.about__buttonArrow{
+    display: inline-block;
+}
+
+.about__button:hover{
+    color: var(--colorBackText);
+    background-color: var(--colorButh);
+}
+
+.about__text{
+    display: block;
+    font: inherit;
+    font-size: var(--font15px);
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.about__background{
+    background-image: url(../img/about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    z-index: 0;
+    width: 100%;
+}
+
+.about__background::after{
+    background: #000;
+    content: "";
+    left: 0;
+    height: 100%;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    transition: opacity .2s linear,background .2s linear;
+    width: 100%;
+}
+
+.about__backgroundImg{
+    height: 100%;
+    max-width: 100%;
+    transition: opacity 150ms linear;
+    transform: translate3d(0,0,0);
+}
+
+.about__content{
+    display: block;
+    width: 70%;
+}
+
+.about__titleText{
+    display: block;
+    font-size: var(--font32px);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.about__titleText::after{
+    content: "";
+    display: block;
+    background-color: var(--colorButText);
+    height: 3px;
+    margin-top: 25px;
+    width: 40px;
+}
+
+
+/* --Resposividade-- */
+
+@media screen and (max-width: 480px){
+    .about{
+        flex-wrap: wrap;
+        height: none;
+    }
+
+    .about__learnMore{
+        height: 50vh;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about__learnMoreBox{
+        width: 80%;
+    }
+
+    .about__rains{
+        height: 100%;
+        padding: 0;
+        width: 100%;
+    }
+
+    .about__content {
+        padding: 12% 0;
+        width: 80%;
+    }
+
+    .about__title{
+        font-size: var(--font28px);
+    }
+
+    .about__titleText{
+        font-size: 1.375rem;
+    }
+
+    .about__button{
+        font-size: var(--font12px);
+        height: 48px;
+        line-height: 46px;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 928px){
+    .about{
+        flex-wrap: wrap;
+        height: none;
+    }
+
+    .about__learnMore{
+        height: 50vh;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about__learnMoreBox{
+        width: 80%;
+    }
+
+    .about__rains{
+        height: 100%;
+        padding: 0;
+        width: 100%;
+    }
+
+    .about__content {
+        padding: 12% 0;
+        width: 80%;
+    }
+
+    .about__title{
+        font-size: var(--font48px);
+    }
+    
+}
+
+@media screen and (min-width: 928px) and (max-width: 1024px){
+    .about__learnMoreBox{
+        width: 70%;
+    }
+
+    .about__title{
+        font-size: var(--font42px);
+    }
+}

@@ -1,0 +1,152 @@
+@charset "UFT-8";
+
+@keyframes scroll-out {
+    0% {
+        top: 2px;
+    }
+
+    49% {
+        top: 19px;
+    }
+    
+    50% {
+        top: -14px;
+    }
+
+    100% {
+        top: 2px;
+    }
+  }
+
+.nav__top{
+    align-items: center;
+    background-color: var(--colorBackText);
+    box-shadow: 0 0 10px 1px #0000000c;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    max-height: 96px;
+    padding: 20px 60px;
+    position: fixed;
+    transition: all 150ms linear;
+    width: 100%;
+    z-index: 4;
+}
+
+.nav__logoTitle{
+    margin: 0;
+    height: 56px;
+}
+
+.nav__logoImg{
+    max-height: 56px;
+}
+
+.nav__icons{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.nav__iconSvgSearch{
+    transform: rotate(0);
+    transition: transform 150ms linear
+}
+
+.nav__iconLinkSearch:hover
+.nav__iconSvgSearch{
+    transform: rotate(-10deg);
+}
+
+.nav__cartCountBox{
+    max-height: 17px;
+    right: 120px;
+    line-height: 1;
+    overflow: hidden;
+    position: absolute;
+    top: 43px;
+    text-align: center;
+    width: 24px;
+}
+
+.nav__cartCount{
+    animation-name: scroll-in;
+    animation-duration: .3s;
+    font-size: var(--font13px);
+    font-weight: var(--fontWeightBodyBold);
+    overflow: hidden;
+    position: relative;
+    transition: top 150ms linear;
+    transform: translateY(0%)
+}
+
+.nav__iconCart:hover .nav__cartCount{
+    animation-name: scroll-out;
+}
+
+.nav__iconBox{
+    height: 28px;
+    margin: 10px 11px 0;
+}
+
+.nav__iconMenu{
+    cursor: pointer;
+    background-color: var(--colorBackText);
+    border: none;
+    display: flex;
+    height: 22px;
+    justify-content: flex-end;
+    margin: 10px 11px 0;
+    padding: 0;
+    position: relative;
+    width: 27px;
+}
+
+.nav__iconMenuHamburguer{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: visible;
+}
+
+.nav__iconMenuLine, 
+.nav__iconMenuLine::after, 
+.nav__iconMenuLine::before{
+    background-color: var(--colorDetBut);
+    content: "";
+    display: block;
+    height: 3px;
+    margin: 0 0 auto auto;
+    width: 27px;
+    right: 0px;
+    transition: 0.3s;
+}
+
+.nav__iconMenuLine::before{
+    bottom: 3px;
+    position: absolute;
+}
+
+.nav__iconMenuLine::after{
+    position: absolute;
+    top: 8px;
+}
+
+.nav__iconMenuHamburguer:hover 
+.nav__iconMenuLine{
+    width: 17px;
+}
+
+.nav__iconMenuHamburguer:hover 
+.nav__iconMenuLine::after{
+    width: 31px;
+}
+
+.nav__iconMenuHamburguer:hover 
+.nav__iconMenuLine::before{
+    width: 20px;
+    right: 0px;
+}

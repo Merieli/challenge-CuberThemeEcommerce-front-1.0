@@ -1,0 +1,127 @@
+@charset "UFT-8";
+
+.testimonials{
+    background-color: var(--colorBack);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.testimonial{
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    width: 25%; 
+}
+
+
+.testimonial:nth-child(3){
+    width: 50%;
+}
+
+.testimonial:nth-child(3)
+.testimonial__people
+.testimonial__text
+.testimonial__quote{
+    font-size: var(--font28px);
+}
+
+.testimonial__people{
+    padding: 50px 11%;
+    text-align: center;
+}
+
+.testimonial__content{
+    text-align: center;
+    width: 100%;
+}
+
+.testimonial__title{
+    color: var(--colorButText);
+    display: block;
+    font-size: var(--font32px);
+    margin: auto;
+    width: 80%;
+}
+
+.testimonial__quote{
+    color: var(--colorButText);
+    font-size: var(--font15px);
+    width: 100%;
+    margin: 0 24px 0 0;
+}
+
+.testimonial__author{
+    color: var(--colorButText);
+    font-size: var(--font13px);
+    line-height: 1.5;
+    margin: 20px auto 0 auto;
+    opacity: .72;
+    padding: 10px 0 0 0;
+    width: 50%
+}
+
+.testimonial__text > .testimonial__author{
+    font-size: var(--font12px);
+    margin: 0;
+    width: 100%;
+}
+
+.testimonial__avatar{
+    margin-bottom: 50px;
+}
+
+.testimonial__img{
+    border-radius: 100%;
+}
+
+.testimonial__avatarSvg path{
+    fill: var(--colorDetBut);
+}
+
+/* --Resposividade-- */
+
+@media screen and (max-width: 480px){
+    .testimonial{
+        width: 100%;    
+    }
+
+    .testimonial:nth-child(3){
+        width: 100%;
+    }
+
+    .testimonial:nth-child(3)
+    .testimonial__people
+    .testimonial__text
+    .testimonial__quote{
+        font-size: var(--font15px);
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px){
+    .testimonials{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .testimonial{
+        width: 50%;    
+    }
+
+    .testimonial:last-child{
+        width: 100%;
+    }
+
+    .testimonial:nth-child(3)
+    .testimonial__people
+    .testimonial__text
+    .testimonial__quote{
+        font-size: var(--font15px);
+    }
+}

@@ -1,0 +1,199 @@
+@charset "UFT-8";
+
+.look{
+    background-color: var(--colorBack);
+    display: flex;
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+
+.look__boxImage{
+    height: 100vh;
+    position: sticky;
+    top: 0;  
+    min-width: 50%;
+}
+
+.look__boxProducts{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    justify-content: flex-start;
+    padding: 15vh 0 5vh 7.5%;
+    position: relative;
+    width: 50%;
+}
+
+.look__boxImg{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.m-look__carousel{
+    display: block;
+    width: 100%;
+    z-index: 0;
+}
+
+.m-look__carouselBox{
+    overflow: hidden;
+}
+
+.m-look__viewport{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    justify-content: flex-start;
+}
+
+
+.m-look__productImg{
+    align-items: center;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.m-look__product{
+    align-items: stretch;
+    background-color: var(--colorBackText);
+    border: 1px solid var(--colorBack);
+    cursor: grab;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10%;
+    width: 36vw;
+}
+
+.m-look__product.active{
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+}
+/* 
+.m-look__product:first-child{
+    margin-left: 7%;
+} */
+
+.m-look__productImage{
+    height: calc(100% - 20%);
+    width: inherit;
+}
+
+
+.m-look__productDetails{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 10px;
+}
+
+.m-look__title{
+    font-size: var(--font24px);
+    margin-bottom: 34px;
+    text-align: center;
+}
+
+.m-look__productName{
+    font-size: var(--font15px);
+    font-weight: var(--fontWeightHeadings);
+}
+
+.m-look__productPrice{
+    font-size: var(--font15px);
+}
+
+.m-look__button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 150ms linear;
+}
+
+.m-look__button:hover
+.m-look__buttonSvg path{
+    fill: var(--colorButh);
+}
+
+.look__navArrows{
+    align-items: center;
+    display: flex;
+    height: 46px;
+    justify-content: center;
+    width: 50%;
+    position: absolute;
+    bottom: 3%;
+    right: 0%;
+}
+
+.look__navNumber{
+    font-size: var(--font15px);
+}
+
+.look__navPrev{
+    cursor: pointer;
+    position: relative;
+    right: 30px;
+}
+
+.look__navCurrent::after{
+    content: "/";
+}
+
+.look__navNext{
+    position: relative;
+    left: 30px;
+}
+
+.look__navSvg path{
+    fill: var(--colorButText);
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 927px){
+    .look{
+        flex-wrap: wrap;
+        padding-bottom: 5vh;
+    }
+
+    .look__boxImage{
+        width: 100%;
+        height: 50vh;
+        position: relative;
+    }
+
+    .look__boxProducts{
+        padding: 5vh 0;
+        width: 100%;
+    }    
+
+    .m-look__viewport{
+        padding-left: 0;
+    }
+
+    .m-look__product{
+        height: 95%;
+        width: 79vw;
+        margin-right: 5%;
+    }
+
+    .m-look__productPrice{
+        margin: 0;
+    }
+    
+    .m-look__product:first-child{
+        margin-left: 10%;
+    }
+
+    .look__navArrows{
+        width: 100%;
+        opacity: .72;
+    }
+
+    
+}

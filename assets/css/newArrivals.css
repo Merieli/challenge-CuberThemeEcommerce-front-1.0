@@ -1,0 +1,23 @@
+@charset "UFT-8";
+
+.newArrivals{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsArrivals__title{
+    display: block;
+    font: var(--fontStyleBody) var(--fontWeightBodyBold) var(--font37px) var(--fontStackBody);
+    text-align: center;
+}
+
+
+/* --Resposividade-- */
+
+@media screen and (max-width: 1024px){
+    .newsArrivals__title{
+        font-size: 1.6875rem;
+    }
+}
