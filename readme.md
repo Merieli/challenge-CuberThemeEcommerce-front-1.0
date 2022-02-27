@@ -7,7 +7,7 @@
     Cuber Theme for Ecommerce
 </h1>
 
-<p align="center">This is a project that was a layout challenge for ecommerce developed in the internship program of the company Netzee for stages 3 and 4.</p>
+<p align="center">This is a project that was a layout challenge for ecommerce developed in the internship program of the company Netzee for stages 3 and 4 completed on September 1, 2021.</p>
 
 <!-- SHIELDS DO PROJETO -->
 <p align="center">
